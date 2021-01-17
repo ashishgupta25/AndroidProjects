@@ -1,0 +1,229 @@
+<resources>
+
+    <string-array name="months_array">
+        <item><font size="12">mmm</font></item>
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="city_array">
+        <item></item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Bangalore</item>
+        <item>Delhi</item>
+        <item>Kolkata</item>
+    </string-array>
+
+    <string-array name="industry_array">
+        <item></item>
+        <item>Food/Restaurant/Catering</item>
+        <item>Hotel</item>
+        <item>Retail/Wholesale/Distributor</item>
+        <item>Transport</item>
+        <item>Delivery/Shipping/Packaging</item>
+        <item>Travel</item>
+        <item>Fashion</item>
+        <item>Gym</item>
+        <item>Salon/Beauty Parlour</item>
+        <item>Manufacturing</item>
+        <item>Medical/Hospital</item>
+        <item>Real Estate</item>
+        <item>Event Management</item>
+        <item>Education</item>
+        <item>IT/Software</item>
+        <item>TV/Films/Entertainment</item>
+        <item>Company</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="profession_array">
+        <item></item>
+        <item>Helper</item>
+        <item>Delivery Boy</item>
+        <item>Motoboy</item>
+        <item>Office Boy</item>
+        <item>Housekeeping</item>
+        <item>Maid</item>
+        <item>Cook</item>
+        <item>Waiter</item>
+        <item>Retail</item>
+        <item>Driver</item>
+        <item>Hairstylist</item>
+        <item>Beautician</item>
+        <item>Salesman</item>
+        <item>Cashier</item>
+        <item>Security Guard/Watchman</item>
+        <item>Hospitality</item>
+        <item>Event Management</item>
+        <item>Teacher</item>
+        <item>Gym Trainer</item>
+        <item>Back Office</item>
+        <item>Technician/ITI</item>
+        <item>Receptionist</item>
+        <item>Accounts</item>
+        <item>Call centre</item>
+        <item>IT/Software</item>
+        <item>Any Job</item>
+        <item>Others</item>
+    </string-array>
+
+    <!--***************strings in java file********************-->
+    <!--error msg-->
+    <string name="errorFirstName">Please enter first name</string>
+    <string name="errorSurname">Please enter surname</string>
+    <string name="errorDate">Invalid Date</string>
+    <string name="errorMonth">Invalid Month</string>
+    <string name="errorYear">Invalid Year</string>
+    <string name="errorJobTitle">Please enter job title</string>
+    <string name="errorIndustry">Please enter Industry</string>
+    <string name="errorProfession">Please enter Profession</string>
+    <string name="errorExperience">Experience should be within 0 to 60</string>
+    <string name="errorMaxExp">Maximum experience should be greater than or equal to minimum experience</string>
+    <string name="errorAge">Age should be within 18 to 80</string>
+    <string name="errorMaxAge">Maximum age should be greater than or equal to minimum age</string>
+    <string name="errorCity">Please enter city name</string>
+    <string name="errorPin1">Please enter pincode</string>
+    <string name="errorPin2">Please enter 6 digits</string>
+    <string name="errorBusinessName">Please enter business name</string>
+    <!--toast msg-->
+    <string name="toastRegisterSuccess">Registered successfully</string>
+    <string name="toastDetailsSaved">Details saved</string>
+    <string name="addedSuccessfully">Added successfully</string>
+    <string name="toastErrorJobRestriction">Cannot add more than 5 jobs. You may edit existing ones.</string>
+    <string name="registerBeforePostingJob">Please register your business before posting jobs.</string>
+    <string name="registerBeforeApplyingJob">Please register before applying for jobs.</string>
+
+    <string name="deleteJob">Delete selected job?</string>
+
+    <string name="internetMsg">Please turn on the internet, then press OK.</string>
+    <string name="internetMsg1">Please switch on the internet.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="editJob">Edit Job Details</string>
+    <string name="searchResources">Search Staff</string>
+    <string name="selectJob">Select Job</string>
+    <string name="applicants">Applicants</string>
+    <string name="postedJobs">Posted Jobs</string>
+    <string name="zeroSearchResult">Zero Result, please relax your filter criteria.</string>
+    <string name="zeroJob1">No jobs added. Please add job.</string>
+    <string name="zeroJob2">No jobs added. Please click on + below to add job.</string>
+    <string name="zeroApplication">No application received yet for this job. Come back after few days.</string>
+    <string name="zeroAppliedJobs">You haven\'t applied for any job yet.</string>
+    <string name="monthly">monthly</string>
+    <string name="applied">Applied</string>
+    <string name="warnGPS">Please turn on GPS for better location accuracy</string>
+    <string name="resend">Resend</string>
+    <string name="shareMsg">Get jobs easily by contacting companies directly. Download the JobPe app now and register. Click here to download https://play.google.com/store/apps/details?id=</string>
+
+    <!--*****************strings in xml file*********************-->
+    <string name="app_name" translatable="false">JobPe</string>
+    <string name="who_description">Do you want Job or Staff for your business?</string>
+    <string name="jobseeker">I want Job</string>
+    <string name="businessOwner">I want Staff for Business</string>
+    <string name="login">Login with Phone  ></string>
+
+    <string name="profileVisible">Profile Visible</string>
+    <string name="profileHidden">Profile Hidden</string>
+    <string name="profile">Profile</string>
+    <string name="appliedJobs">Applied Jobs</string>
+    <string name="share">Share</string>
+    <string name="aboutUs">About Us</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="rateMe">Rate Me</string>
+    <string name="privacy">Privacy Policy</string>
+
+    <string name="register">Register</string>
+    <string name="empPhoto">Your photo</string>
+    <string name="firstName">First Name*</string>
+    <string name="surname">Surname*</string>
+    <string name="birthDate">Birth Date*</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="industry">Industry</string>
+    <string name="industryMust">Industry*</string>
+    <string name="jobTitle">Job Title</string>
+    <string name="jobTitleMust">Job Title*</string>
+    <string name="profession">Profession</string>
+    <string name="professionMust">Profession*</string>
+    <string name="salary">Salary</string>
+    <string name="experience">Experience</string>
+    <string name="about">About</string>
+    <string name="email">Email</string>
+    <string name="sendOtp">Send OTP</string>
+    <string name="verifyOTP">Verify OTP</string>
+    <string name="hintOTP">OTP from your email</string>
+    <string name="verified">Verified</string>
+    <string name="errorEmptyOTP">Please enter OTP</string>
+    <string name="errorWrongOTP">Wrong OTP, please re-enter</string>
+    <string name="otpSent">OTP sent. Please check your email</string>
+    <string name="findMe">Find Me</string>
+    <string name="city">City</string>
+    <string name="cityMust">City*</string>
+    <string name="pincode">Pincode</string>
+    <string name="pincodeMust">Pincode*</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+
+    <string name="searchJob">Search Job</string>
+    <string name="latest">Latest</string>
+    <string name="Nearest">Nearest</string>
+    <string name="apply">Apply</string>
+    <string name="filter">Filter</string>
+    <string name="reset">Reset</string>
+    <string name="distance">Distance</string>
+    <string name="to">to</string>
+    <string name="years">years</string>
+    <string name="applyFilters">Apply Filters</string>
+
+    <string name="jobDesc">Job Desc</string>
+    <string name="businessName">Biz Name</string>
+    <string name="businessNameMust">Business Name*</string>
+    <string name="businessPhoto">Business\nphoto</string>
+    <string name="address">Address</string>
+    <string name="mobile">Mobile</string>
+
+    <string name="aboutUsHeadline">What do we do?</string>
+    <string name="aboutUsEmployee">We help you directly interact with the businesses/shops/companies for full-time, part-time, one-time job.
+        \n\nIf you get employed through contractor there will be huge commission paid to contractor from your salary.
+        \n\nHere you will get full salary without any commission cut-off.</string>
+    <string name="aboutUsBusiness">Are you looking for a full-time, part-time or a one-time employee for your business?
+        \n\nHere you can easily find office boy, cleaner, delivery boy, motoboy, cook, cashier, hair stylist, gym trainer, bus driver, truck driver, helper or sales person.
+        \n\nThis is the platform for finding such experts from your nearby locations. We help you directly interact with the jobseeker. If you get them through
+        contractor you will have to pay thousands of rupees commission to contractor every month apart from salary to resources. Here you pay only ₹ 500.
+        \n\nFree job posting for 3 months if you register before 31st June, 2019. See all profiles and contact candidates directly.</string>
+
+    <string name="contactUsHeadline">Do you need help?</string>
+    <string name="contactUsSubheader">For any assistance feel free to connect with us.</string>
+    <string name="emailId" translatable="false"></string>
+    <string name="emailPassword" translatable="false"></string>
+    <string name="phoneNumber" translatable="false"></string>
+    <string name="jobPeAddress"></string>
+
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="description">Description</string>
+
+    <string name="jobApplications">Job Applications</string>
+    <string name="addJob">Add Job</string>
+
+    <string name="hintSizeSalary"><font size="12">Salary monthly</font></string>
+    <string name="hintSizeExperience"><font size="12">how many years</font></string>
+    <string name="hintDay" translatable="false"><font size="12">dd</font></string>
+    <string name="hintMonth" translatable="false"><font size="12">mm</font></string>
+    <string name="hintYear" translatable="false"><font size="12">yyyy</font></string>
+
+    <string name="clickFindMe">Click Find Me</string>
+
+</resources>

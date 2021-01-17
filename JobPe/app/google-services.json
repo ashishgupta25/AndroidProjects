@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "452314876059",
+    "firebase_url": "https://jobpe-8b285.firebaseio.com",
+    "project_id": "jobpe-8b285",
+    "storage_bucket": "jobpe-8b285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452314876059:android:f37c7dc3170c8db7",
+        "android_client_info": {
+          "package_name": "com.jobpe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452314876059-stnmranjkursjlb8lg5065mak78k75im.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobpe",
+            "certificate_hash": "5e2205ac6425ce8d5711052b7e49ea02e4f6f6a0"
+          }
+        },
+        {
+          "client_id": "452314876059-8eatj13arghvgksuhg9248cvprmipql7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobpe",
+            "certificate_hash": "46538f6cdf3f70663dd4a1e2870de355a0119c8d"
+          }
+        },
+        {
+          "client_id": "452314876059-4oid08b0rqgq0dlmcaoa515fhmdvarqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobpe",
+            "certificate_hash": "cb0376e9088a0bc945e19b3c0dbb2846a87c0979"
+          }
+        },
+        {
+          "client_id": "452314876059-a4i0kiu48eqqnt55o6qmu146qe85erc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452314876059-a4i0kiu48eqqnt55o6qmu146qe85erc9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

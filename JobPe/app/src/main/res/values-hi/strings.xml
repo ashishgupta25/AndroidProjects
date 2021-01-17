@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="who_description">आपको काम चाहिए या अपने बिज़नेस के लिए स्टाफ?</string>
+    <string name="jobseeker">मुझे काम चाहिए</string>
+    <string name="businessOwner">मुझे अपने बिज़नेस के लिए स्टाफ चाहिए</string>
+    <string name="login">फ़ोन से लॉगिन करें ></string>
+
+    <string name="profileVisible">प्रोफ़ाइल दिखेगा</string>
+    <string name="profileHidden">प्रोफ़ाइल अदृश्य</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="appliedJobs">एप्लाइड नौकरियां</string>
+    <string name="share">ऐप शेयर करें</string>
+    <string name="aboutUs">हमारे बारे में</string>
+    <string name="contactUs">संपर्क करें</string>
+    <string name="rateMe">रेटिंग दीजिये</string>
+    <string name="privacy">निजी नीति</string>
+
+    <string name="register">रजिस्टर</string>
+    <string name="empPhoto">आपकी फोटो</string>
+    <string name="firstName">पहला नाम*</string>
+    <string name="surname">सरनेम*</string>
+    <string name="birthDate">जन्म दिन*</string>
+    <string name="gender">लिंग</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="industry">इंडस्ट्री</string>
+    <string name="industryMust">इंडस्ट्री*</string>
+    <string name="profession">काम</string>
+    <string name="professionMust">काम*</string>
+    <string name="salary">पगार</string>
+    <string name="experience">एक्सपीरियंस</string>
+    <string name="about">डिटेल</string>
+    <string name="email">ईमेल</string>
+    <string name="sendOtp">ओटीपी भेजे</string>
+    <string name="verifyOTP">ओटीपी जांच करे</string>
+    <string name="findMe">मुझे ढूढ़ें</string>
+    <string name="city">शहर</string>
+    <string name="cityMust">शहर*</string>
+    <string name="pincode">पिन कोड</string>
+    <string name="pincodeMust">पिन कोड*</string>
+    <string name="submit">सबमिट</string>
+    <string name="save">सेव</string>
+    <string name="searchJob">नौकरी ढूँढे</string>
+    <string name="latest">लेटेस्ट</string>
+    <string name="Nearest">पास में</string>
+    <string name="apply">अप्लाई</string>
+    <string name="filter">फिल्टर</string>
+    <string name="reset">रीसेट</string>
+    <string name="distance">दूरी</string>
+    <string name="to">से</string>
+    <string name="years">साल</string>
+    <string name="applyFilters">अप्लाई फिल्टर</string>
+    <string name="jobDesc">जॉब डिटेल</string>
+    <string name="businessName">बिज़नेस का नाम</string>
+    <string name="businessNameMust">बिज़नेस का नाम*</string>
+    <string name="businessPhoto">बिज़नेस का फोटो</string>
+    <string name="address">पता</string>
+    <string name="mobile">मोबाइल</string>
+    <string name="aboutUsHeadline">हम क्या करते हैं?</string>
+    <string name="aboutUsEmployee">हम आपको फुल-टाइम, पार्ट-टाइम, वन-टाइम नौकरी के लिए व्यवसायों / दुकानों / कंपनियों के साथ सीधे संपर्क करने में मदद करते हैं।
+        \n\nयदि आप कॉन्ट्रैक्टर के माध्यम से नियोजित होते हैं, तो कॉन्ट्रैक्टर आपके पगार से भारी कमीशन काट लेते हैं।
+        \n\nयहां आपको बिना कमीशन काटे पूरा पगार मिलेगा।</string>
+    <string name="aboutUsBusiness">क्या आप अपने व्यवसाय के लिए फुल-टाइम, पार्ट-टाइम, वन-टाइम कर्मचारी की तलाश कर रहे हैं?
+        \n\nयहाँ आप आसानी से हेल्पर, ऑफिस बॉय, सफाई कर्मचारी, डिलीवरी बॉय, बावर्ची, कैशियर, हेयर स्टाइलिस्ट, जिम ट्रेनर, बस ड्राइवर, ट्रक ड्राइवर, हेल्पर या सेल्समेन ढूंढ सकते हैं आपके नजदीक में।
+        \n\nहम आपको सीधे नौकरी करने वाले के साथ बातचीत करने में मदद करते हैं। अगर आप कॉन्ट्रैक्टर के माध्यम से कर्मचारी को रखते हैं तो उन्हें हर महीने
+        हज़ारों रुपए कमीशन देने पड़ते है। आपको यहाँ केवल ₹500 देने होंगे।
+        \n\nफ्री में सभी प्रोफाइल देखें और सीधे उम्मीदवारों से संपर्क करें 3 महीने के लिए यदि आप 31 जून, 2019 से पहले रजिस्टर करते हैं।</string>
+    <string name="contactUsHeadline">क्या आपको मदद की ज़रूरत है?</string>
+    <string name="contactUsSubheader">किसी भी प्रकार की सहायता के लिए हमें संपर्क करें।</string>
+    <string name="jobPeAddress">अनिरुद्ध आर्केड, B-701, प्लॉट नं 102, सेक्टर 35, कामोठे, मानसरोवर, मुंबई 410209</string>
+    <string name="name">नाम</string>
+    <string name="age">उम्र</string>
+    <string name="description">डिटेल</string>
+    <string name="jobApplications">नौकरी के आवेदन</string>
+    <string name="addJob">ऐड जॉब</string>
+    <string name="hintSizeSalary"><font size="12">पगार एक महीने में</font></string>
+    <string name="hintSizeExperience"><font size="12">कितने साल एक्सपीरियंस</font></string>
+    <string name="errorFirstName">कृपया पहला नाम दर्ज करें</string>
+    <string name="errorSurname">कृपया सरनेम दर्ज करें</string>
+    <string name="errorDate">अमान्य दिनांक</string>
+    <string name="errorMonth">अमान्य महीना</string>
+    <string name="errorYear">अमान्य साल</string>
+    <string name="errorIndustry">कृपया इंडस्ट्री दर्ज करें</string>
+    <string name="errorProfession">कृपया काम दर्ज करें</string>
+    <string name="errorExperience">एक्सपीरियंस 0 से 60 के भीतर होना चाहिए</string>
+    <string name="errorPin1">कृपया पिन कोड दर्ज करें</string>
+    <string name="errorPin2">पिन कोड 6 अंकों का होना चाहिए</string>
+    <string name="errorBusinessName">कृपया बिज़नेस का नाम दर्ज करें</string>
+    <string name="toastRegisterSuccess">रजिस्टर सफलतापूर्वक हो चुका</string>
+    <string name="toastDetailsSaved">डिटेल सफलतापूर्वक सेव हो चुका</string>
+    <string name="shareMsg">कंपनियों से सीधे संपर्क करके आसानी से नौकरी पाए। अभी JobPe ऐप डाउनलोड करके रजिस्टर करें। डाउनलोड करने के लिये यहाँ क्लिक करें https://play.google.com/store/apps/details?id=</string>
+    <string name="internetMsg">कृपया इंटरनेट चालू करें, फिर ओके दबाएं।</string>
+    <string name="ok">ओके</string>
+    <string name="cancel">कैंसिल</string>
+    <string name="editJob">चेंज जॉब डिटेल</string>
+    <string name="searchResources">कर्मचारी ढूंढे</string>
+    <string name="selectJob">जॉब चुने</string>
+    <string name="applicants">अप्लाई किये  हुए लोग</string>
+    <string name="postedJobs">पोस्टेड जॉब</string>
+    <string name="zeroSearchResult">शून्य लोग, कृपया फ़िल्टर चेंज करें।</string>
+    <string name="zeroJob1">कोई नौकरी नहीं जोड़ी। कृपया नौकरी जोड़ें।</string>
+    <string name="zeroJob2">कोई नौकरी नहीं जोड़ी। नौकरी जोड़ने के लिए कृपया नीचे + दबाए।</string>
+    <string name="zeroApplication">इस नौकरी के लिए अभी तक कोई आवेदन नहीं मिला है। कुछ दिनों के बाद चेक कीजिए।</string>
+    <string name="zeroAppliedJobs">आपने अभी तक किसी भी नौकरी के लिए आवेदन नहीं किया है।</string>
+    <string name="monthly">महीने का</string>
+    <string name="applied">एप्लाइड</string>
+    <string name="warnGPS">बेहतर सेवा के लिए कृपया GPS चालू करें।</string>
+    <string name="resend">दोबारा भेजिए।</string>
+    <string name="hintOTP">अपने ईमेल से OTP दर्ज करें</string>
+    <string name="errorEmptyOTP">कृपया OTP दर्ज करें</string>
+    <string name="errorWrongOTP">गलत ओटीपी, कृपया पुनः दर्ज करें।</string>
+    <string name="verified">वेरीफाई हो चुका।</string>
+    <string name="errorMaxExp">अधिकतम अनुभव न्यूनतम अनुभव से अधिक या उसके बराबर होना चाहिए।</string>
+    <string name="errorAge">आयु 18 से 80 के भीतर होनी चाहिए।</string>
+    <string name="errorMaxAge">अधिकतम आयु न्यूनतम आयु से अधिक या उसके बराबर होनी चाहिए।</string>
+    <string name="addedSuccessfully">सफलतापूर्वक जोड़ा गया।</string>
+    <string name="toastErrorJobRestriction">5 से अधिक जॉब जोड़ नहीं सकते। आप मौजूदा जॉब को चेंज  कर सकते हैं।</string>
+    <string name="deleteJob">सिलेक्टेड जॉब डिलीट किया जाए?</string>
+    <string name="internetMsg1">कृपया इंटरनेट चालू करे।</string>
+    <string name="otpSent">OTP भेजा गया। कृपया अपनी ईमेल देखें।</string>
+    <string name="registerBeforePostingJob">नौकरी पोस्ट करने से पहले कृपया अपना बिज़नेस रजिस्टर करें।</string>
+    <string name="registerBeforeApplyingJob">नौकरियों के लिए आवेदन करने से पहले रजिस्टर करें।</string>
+    <string name="errorJobTitle">नौकरी का शीर्षक दर्ज करें</string>
+    <string name="jobTitle">जॉब शीर्षक</string>
+    <string name="jobTitleMust">जॉब शीर्षक*</string>
+    <string name="errorCity">कृपया शहर का नाम दर्ज करें</string>
+    <string name="clickFindMe">मुझे ढूढ़ें पर दबाए</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="@string/reset"
+        android:textColor="@color/darkGreen" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reset"
+        android:text="@string/city" />
+
+    <Spinner
+        android:id="@+id/city"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewCity"
+        android:entries="@array/city_array"
+        android:popupBackground="@color/lightGreen" />
+
+    <TextView
+        android:id="@+id/textProfession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:text="@string/profession" />
+
+    <Spinner
+        android:id="@+id/profession"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textProfession"
+        android:entries="@array/profession_array"
+        android:popupBackground="@color/lightGreen" />
+
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profession"
+        android:text="@string/distance" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profession"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="25000 km" />
+
+    <SeekBar
+        android:id="@+id/seekBarDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDistance"
+        android:paddingVertical="20dp"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/textViewExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarDistance"
+        android:text="@string/experience" />
+
+    <EditText
+        android:id="@+id/minExperience"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewExperience"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/textViewExpTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewExperience"
+        android:layout_alignBaseline="@+id/minExperience"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/minExperience"
+        android:text="@string/to"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/maxExperience"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewExperience"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textViewExpTo"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewExperience"
+        android:layout_alignBaseline="@+id/minExperience"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/maxExperience"
+        android:text="@string/years"
+        android:textAlignment="center" />
+
+</merge>
+

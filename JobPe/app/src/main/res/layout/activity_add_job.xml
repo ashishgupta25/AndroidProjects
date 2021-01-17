@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="@dimen/cardElevation"
+        tools:context=".activity.AddJobActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/errorMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:minHeight="30dp"
+                android:padding="10dp"
+                android:textColor="@color/textWhite"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textJobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/errorMsg"
+                android:text="@string/jobTitleMust"
+                android:textSize="@dimen/textSize" />
+
+            <EditText
+                android:id="@+id/jobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textJobTitle"
+                android:maxLength="40"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:id="@+id/textProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jobTitle"
+                android:text="@string/professionMust"
+                android:textSize="@dimen/textSize" />
+
+            <Spinner
+                android:id="@+id/profession"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textProfession"
+                android:entries="@array/profession_array"
+                android:popupBackground="@color/lightGreen" />
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profession"
+                android:text="@string/description"
+                android:textSize="@dimen/textSize" />
+
+            <EditText
+                android:id="@+id/jobDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc"
+                android:background="@drawable/rectangle_border"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:overScrollMode="always"
+                android:padding="10dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:id="@+id/textSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jobDesc"
+                android:layout_marginTop="5dp"
+                android:text="@string/salary" />
+
+            <EditText
+                android:id="@+id/salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSalary"
+                android:hint="@string/hintSizeSalary"
+                android:inputType="number"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:id="@+id/textExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salary"
+                android:text="@string/experience" />
+
+            <EditText
+                android:id="@+id/minExperience"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textExperience"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAlignment="center"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:id="@+id/textExpTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textExperience"
+                android:layout_alignBaseline="@+id/minExperience"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/minExperience"
+                android:text="@string/to"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/maxExperience"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textExperience"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textExpTo"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAlignment="center"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textExperience"
+                android:layout_alignBaseline="@+id/minExperience"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/maxExperience"
+                android:text="@string/years"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minExperience"
+                android:text="@string/age" />
+
+            <EditText
+                android:id="@+id/minAge"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAge"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAlignment="center"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:id="@+id/textAgeTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAge"
+                android:layout_alignBaseline="@+id/minAge"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/minAge"
+                android:text="@string/to"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/maxAge"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAge"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textAgeTo"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAlignment="center"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAge"
+                android:layout_alignBaseline="@+id/minAge"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/maxAge"
+                android:text="@string/years"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/checkboxMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minAge"
+                android:checked="true"
+                android:text="@string/male" />
+
+            <CheckBox
+                android:id="@+id/checkboxFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minAge"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/checkboxMale"
+                android:checked="true"
+                android:text="@string/female" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkboxMale"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/rectangle_filled"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/save"
+                android:textColor="@color/textWhite" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

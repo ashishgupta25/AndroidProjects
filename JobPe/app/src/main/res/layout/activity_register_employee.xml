@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterEmployeeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSubmit"
+        android:background="@color/lightGrey">
+
+        <RelativeLayout
+            android:id="@+id/layoutForSnackbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/errorMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:minHeight="30dp"
+                android:padding="10dp"
+                android:textColor="@color/textWhite"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/errorMsg"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="@dimen/cardElevation">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="@dimen/cardElevation"
+                    app:cardPreventCornerOverlap="false">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_dummy_profile_pic" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/transparentBlack"
+                            android:gravity="center"
+                            android:text="@string/empPhoto"
+                            android:textColor="@color/textWhite" />
+                    </FrameLayout>
+                </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/card1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="@dimen/cardElevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/textFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/firstName"
+                        android:textSize="@dimen/textSize" />
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textFirstName"
+                        android:inputType="text"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:id="@+id/textLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/firstName"
+                        android:text="@string/surname"
+                        android:textSize="@dimen/textSize" />
+
+                    <EditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textLastName"
+                        android:inputType="text"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:id="@+id/textBirthDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lastName"
+                        android:text="@string/birthDate"
+                        android:textSize="@dimen/textSize" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutBirthDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textBirthDate"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <EditText
+                            android:id="@+id/editTextDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/hintDay"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textSize="@dimen/textSize" />
+
+                        <TextView
+                            android:id="@+id/textViewSlash1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="/"
+                            android:textSize="@dimen/textSize" />
+
+                        <EditText
+                            android:id="@+id/editTextMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/hintMonth"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textSize="@dimen/textSize" />
+
+                        <TextView
+                            android:id="@+id/textViewSlash2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="/"
+                            android:textSize="@dimen/textSize" />
+
+                        <EditText
+                            android:id="@+id/editTextYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/hintYear"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="@dimen/textSize" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutBirthDate"
+                        android:text="@string/gender"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textGender"
+                        android:checkedButton="@+id/radioMale"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/male"
+                            android:textColor="@color/darkGrey"
+                            android:textSize="@dimen/textSize" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/female"
+                            android:textColor="@color/darkGrey"
+                            android:textSize="@dimen/textSize" />
+
+                    </RadioGroup>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/card2"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="@dimen/cardElevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/textJobTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jobTitleMust"
+                        android:textSize="@dimen/textSize" />
+
+                    <EditText
+                        android:id="@+id/jobTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textJobTitle"
+                        android:maxLength="40"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:id="@+id/textProfession"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/jobTitle"
+                        android:text="@string/professionMust" />
+
+                    <Spinner
+                        android:id="@+id/profession"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/textProfession"
+                        android:entries="@array/profession_array"
+                        android:popupBackground="@color/lightGreen" />
+
+                    <TextView
+                        android:id="@+id/textSalary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profession"
+                        android:text="@string/salary"
+                        android:textSize="@dimen/textSize" />
+
+                    <EditText
+                        android:id="@+id/salary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textSalary"
+                        android:hint="@string/hintSizeSalary"
+                        android:inputType="number"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:id="@+id/textExperience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/salary"
+                        android:text="@string/experience"
+                        android:textSize="@dimen/textSize" />
+
+                    <EditText
+                        android:id="@+id/experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textExperience"
+                        android:hint="@string/hintSizeExperience"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textSize="@dimen/textSize" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/card3"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="@dimen/cardElevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/textAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about"
+                        android:textSize="@dimen/textSize" />
+
+                    <EditText
+                        android:id="@+id/about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textAbout"
+                        android:background="@drawable/rectangle_border"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:overScrollMode="always"
+                        android:padding="10dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/textSize" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/card4"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="@dimen/cardElevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/textEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textEmail"
+                        android:layout_marginRight="80dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:id="@+id/linkSendOtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textEmail"
+                        android:layout_alignBaseline="@+id/email"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:text="@string/sendOtp"
+                        android:textColor="@color/parrotGreen" />
+
+                    <EditText
+                        android:id="@+id/otpBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email"
+                        android:layout_marginRight="80dp"
+                        android:hint="@string/hintOTP"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:textSize="@dimen/textSize"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/linkVerifyOtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email"
+                        android:layout_alignBaseline="@+id/otpBox"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:text="@string/verifyOTP"
+                        android:textColor="@color/parrotGreen"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/addressLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/otpBox"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cardFindMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardElevation"
+                            app:cardPreventCornerOverlap="false">
+
+                            <Button
+                                android:id="@+id/btnFindMe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/lightGreen"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:text="@string/findMe"
+                                android:textAllCaps="false"
+                                android:textColor="@color/darkGrey" />
+                        </android.support.v7.widget.CardView>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="3">
+
+                            <EditText
+                                android:id="@+id/city"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:hint="@string/cityMust"
+                                android:inputType="text"
+                                android:padding="10dp"
+                                android:textSize="@dimen/textSize" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBarCity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2">
+
+                            <EditText
+                                android:id="@+id/pin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:hint="@string/pincodeMust"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:padding="10dp"
+                                android:textSize="@dimen/textSize" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBarPin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="gone" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <!--Write coding for clickFindMe view below addressLayout in this xml so that in GUI clickFindMe view appears above findMe button in z-direction
+                    as xml elements are rendered in the order they are written here-->
+                    <TextView
+                        android:id="@+id/clickFindMe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/addressLayout"
+                        android:background="@drawable/shape_bubble"
+                        android:paddingHorizontal="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/clickFindMe"
+                        android:textColor="@color/textWhite"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/btnColor"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/submit"
+        android:textAlignment="center"
+        android:textColor="@color/textWhite" />
+
+</RelativeLayout>

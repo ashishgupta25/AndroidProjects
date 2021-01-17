@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/icon_profile_pic"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_jobApplications"
+            android:icon="@drawable/icon_tick_box"
+            android:title="@string/jobApplications" />
+        <item
+            android:id="@+id/nav_addJob"
+            android:icon="@drawable/plus_symbol"
+            android:title="@string/addJob" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/icon_share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@drawable/icon_about_us"
+            android:title="@string/aboutUs" />
+        <item
+            android:id="@+id/nav_contactUs"
+            android:icon="@drawable/icon_phone"
+            android:title="@string/contactUs" />
+        <item
+            android:id="@+id/nav_rateMe"
+            android:icon="@drawable/icon_thumb"
+            android:title="@string/rateMe" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/icon_privacy"
+            android:title="@string/privacy" />
+    </group>
+</menu>

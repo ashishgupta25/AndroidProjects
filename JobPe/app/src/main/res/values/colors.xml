@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/mehendiColor</color>
+    <color name="colorPrimaryDark">@color/darkGreen</color>
+    <color name="colorAccent">@color/mehendiColor</color>
+
+    <color name="btnColor">@color/mehendiColor</color>
+    <color name="linkClicked">@color/darkGreen</color>
+
+    <color name="textBlack">@android:color/black</color>
+    <color name="textWhite">@android:color/white</color>
+
+    <color name="mehendiColor">#5E8D42</color>
+    <color name="lightGreen">#e5f8e5</color><!--<color name="lightGreen">#ebf4e6</color>-->
+    <color name="parrotGreen">#96cb7f</color>
+    <color name="darkGreen">#3E8605</color>
+    <!--<color name="darkGreen">#2c790a</color>-->
+
+    <color name="selectionColor">#CCFFFF</color>
+
+    <color name="lightGrey">#E7E5E5</color>
+    <color name="darkGrey">#7c7b7b</color>
+    <color name="transparentBlack">#4D000000</color>
+    <color name="transparentBlack1">#80000000</color>
+
+
+    <!--    <color name="mediumaquamarine">#66CDAA</color>
+            <color name="lightseagreen">#20B2AA</color>
+            <color name="darkcyan">#008B8B</color>-->
+
+    <color name="softPurple">#ddd3ee</color>
+    <color name="lavender">#E6E6FA</color>
+    <color name="softYellow">#FFFFE0</color>
+
+</resources>

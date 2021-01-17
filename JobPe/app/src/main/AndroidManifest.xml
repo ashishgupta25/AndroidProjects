@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jobpe">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".dao.ParseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.BaseActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.WhoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterBusinessActivity"
+            android:label="@string/register"
+            android:parentActivityName=".activity.SearchEmployeeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SearchEmployeeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SearchEmployeeActivity"
+            android:label="@string/searchResources"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".activity.SearchEmployeeActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activity.DetailEmployeeActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".activity.SelectJobActivity"
+            android:label="@string/selectJob"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.SearchEmployeeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SearchEmployeeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.JobApplicantActivity"
+            android:label="@string/applicants"
+            android:parentActivityName=".activity.SelectJobActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SelectJobActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PostedJobActivity"
+            android:label="@string/postedJobs"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.SearchEmployeeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SearchEmployeeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AddJobActivity"
+            android:label="@string/addJob"
+            android:parentActivityName=".activity.PostedJobActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.PostedJobActivity" />
+        </activity>
+        <activity
+            android:name=".activity.RegisterEmployeeActivity"
+            android:label="@string/register"
+            android:parentActivityName=".activity.SearchJobActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SearchJobActivity" />
+        </activity> <!-- singleTop added since on back arrow pressed at AppliedJobActivity, below activity shouldn't refresh -->
+        <activity
+            android:name=".activity.SearchJobActivity"
+            android:label="@string/searchJob"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"> <!-- Disabled screen rotation -->
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".activity.SearchJobActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activity.DetailJobActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".activity.AppliedJobActivity"
+            android:label="@string/appliedJobs"
+            android:parentActivityName=".activity.SearchJobActivity"
+            android:screenOrientation="portrait">
+            <!-- meta-data for android 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SearchJobActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:label="@string/contactUs"
+            android:parentActivityName=".activity.SearchJobActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SearchJobActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:label="@string/aboutUs"
+            android:parentActivityName=".activity.SearchJobActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SearchJobActivity" />
+        </activity>
+    </application>
+
+</manifest>

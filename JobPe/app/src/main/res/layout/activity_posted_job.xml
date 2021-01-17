@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/activity_applied_job" />
+
+    <android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/addJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="20dp"
+        app:backgroundTint="@color/btnColor"
+        app:rippleColor="@color/darkGreen"
+        app:srcCompat="@drawable/plus_symbol" />
+
+</merge>

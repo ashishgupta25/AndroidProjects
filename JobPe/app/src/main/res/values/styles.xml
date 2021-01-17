@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Main activity theme, show logo in background while SearchJobActivity loads. -->
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/load_screen</item>
+    </style>
+
+    <!--This style is used to open next activity over and above previous activity which becomes transparent
+        Theme.AppCompat.Dialog will allow user to close dialog when touched outside area. It shows title on dialog.
+        Theme.AppCompat.NoActionBar will not allow user to close activity when touched outside area. It doesn't show title on dialog. -->
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item> <!--Probably not needed as without this also there is no issue on GUI-->
+    </style>
+
+</resources>

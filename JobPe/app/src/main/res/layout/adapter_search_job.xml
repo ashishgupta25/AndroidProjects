@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/lightGreen"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/cardElevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:minHeight="100dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_dummy_shop" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/postedOn"
+            android:layout_toRightOf="@+id/cardPhoto"
+            android:textSize="@dimen/textSizeMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/postedOn"
+            android:layout_toRightOf="@+id/cardPhoto" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/businessName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/cardPhoto" />
+
+        <TextView
+            android:id="@+id/postedOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profession"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/cardPhoto" />
+
+        <TextView
+            android:id="@+id/experienceRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/salary"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/cardPhoto" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/experienceRange"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/cardPhoto" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardApply"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false">
+
+                <Button
+                    android:id="@+id/btnApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btnColor"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/apply"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textWhite" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

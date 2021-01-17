@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">15sp</dimen>
+    <dimen name="textSizeMedium">16sp</dimen>
+    <dimen name="jobDetailWidth">100dp</dimen>
+    <dimen name="empDetailWidth">100dp</dimen>
+    <dimen name="marginTop">5dp</dimen>
+    <dimen name="cardElevation">5dp</dimen>
+</resources>
